@@ -1,0 +1,18 @@
+{
+  "name": "prepgenius-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI-Powered Placement Preparation Platform",
+  "scripts": {
+    "client:install": "npm --prefix client install",
+    "server:install": "npm --prefix server install",
+    "install:all": "npm install && npm run server:install && npm run client:install",
+    "client": "npm --prefix client run dev",
+    "server": "npm --prefix server run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "npm --prefix client run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

@@ -1,0 +1,45 @@
+﻿# Dependencies
+node_modules/
+**/node_modules/
+/.pnp
+.pnp.js
+
+# Environment variables & secrets
+.env
+.env.*
+*.env
+**/.env
+**/.env.*
+*.pem
+*.key
+*.cert
+
+# Production & Build outputs
+dist/
+**/dist/
+build/
+**/build/
+.cache/
+
+# Testing & Coverage
+/coverage
+.nyc_output
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+*.log
+
+# Uploads & Temporary user files
+server/uploads/*
+!server/uploads/.gitkeep
+
+# IDEs & OS Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
